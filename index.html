@@ -8,10 +8,9 @@
 
   <script>
     let a = Number(prompt("Valor de a:"));
-    if (a === 0) {
-      alert("insira um número diferente de 0!");
-      Number(prompt("valor de a:"));
-    };
+     do {
+       a = Number(prompt("valor de a:"));
+     } while (a === 0); 
     let b = Number(prompt("Valor de b:"));
     let c = Number(prompt("Valor de c:"));
     let delta = b * b - 4 * a * c;
